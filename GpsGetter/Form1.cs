@@ -36,6 +36,7 @@ namespace GpsGetter
         {
             txbLat.Text = e.Position.Location.Latitude.ToString();
             txbLon.Text = e.Position.Location.Longitude.ToString();
+            txbTimestamp.Text = e.Position.Timestamp.ToString();
             txbAccuracy.Text = e.Position.Location.HorizontalAccuracy.ToString();
         }
     }

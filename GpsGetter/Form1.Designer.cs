@@ -35,12 +35,14 @@
             this.txbLat = new System.Windows.Forms.TextBox();
             this.txbAccuracy = new System.Windows.Forms.TextBox();
             this.lblAccuracy = new System.Windows.Forms.Label();
+            this.lblTimestamp = new System.Windows.Forms.Label();
+            this.txbTimestamp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(33, 250);
+            this.button1.Location = new System.Drawing.Point(33, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(229, 44);
             this.button1.TabIndex = 0;
@@ -52,7 +54,7 @@
             // 
             this.lblLon.AutoSize = true;
             this.lblLon.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblLon.Location = new System.Drawing.Point(27, 55);
+            this.lblLon.Location = new System.Drawing.Point(27, 206);
             this.lblLon.Name = "lblLon";
             this.lblLon.Size = new System.Drawing.Size(57, 36);
             this.lblLon.TabIndex = 1;
@@ -61,7 +63,7 @@
             // txbLon
             // 
             this.txbLon.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txbLon.Location = new System.Drawing.Point(139, 55);
+            this.txbLon.Location = new System.Drawing.Point(139, 206);
             this.txbLon.Name = "txbLon";
             this.txbLon.Size = new System.Drawing.Size(123, 31);
             this.txbLon.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             this.lblLat.AutoSize = true;
             this.lblLat.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblLat.Location = new System.Drawing.Point(27, 118);
+            this.lblLat.Location = new System.Drawing.Point(27, 169);
             this.lblLat.Name = "lblLat";
             this.lblLat.Size = new System.Drawing.Size(51, 36);
             this.lblLat.TabIndex = 3;
@@ -79,7 +81,7 @@
             // txbLat
             // 
             this.txbLat.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txbLat.Location = new System.Drawing.Point(139, 123);
+            this.txbLat.Location = new System.Drawing.Point(139, 169);
             this.txbLat.Name = "txbLat";
             this.txbLat.Size = new System.Drawing.Size(123, 31);
             this.txbLat.TabIndex = 4;
@@ -87,7 +89,7 @@
             // txbAccuracy
             // 
             this.txbAccuracy.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txbAccuracy.Location = new System.Drawing.Point(139, 175);
+            this.txbAccuracy.Location = new System.Drawing.Point(139, 243);
             this.txbAccuracy.Name = "txbAccuracy";
             this.txbAccuracy.Size = new System.Drawing.Size(123, 31);
             this.txbAccuracy.TabIndex = 5;
@@ -96,17 +98,37 @@
             // 
             this.lblAccuracy.AutoSize = true;
             this.lblAccuracy.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblAccuracy.Location = new System.Drawing.Point(27, 170);
+            this.lblAccuracy.Location = new System.Drawing.Point(27, 243);
             this.lblAccuracy.Name = "lblAccuracy";
             this.lblAccuracy.Size = new System.Drawing.Size(63, 36);
             this.lblAccuracy.TabIndex = 6;
             this.lblAccuracy.Text = "精度";
+            // 
+            // lblTimestamp
+            // 
+            this.lblTimestamp.AutoSize = true;
+            this.lblTimestamp.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lblTimestamp.Location = new System.Drawing.Point(29, 37);
+            this.lblTimestamp.Name = "lblTimestamp";
+            this.lblTimestamp.Size = new System.Drawing.Size(106, 24);
+            this.lblTimestamp.TabIndex = 7;
+            this.lblTimestamp.Text = "最終更新日時";
+            // 
+            // txbTimestamp
+            // 
+            this.txbTimestamp.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txbTimestamp.Location = new System.Drawing.Point(33, 64);
+            this.txbTimestamp.Name = "txbTimestamp";
+            this.txbTimestamp.Size = new System.Drawing.Size(229, 27);
+            this.txbTimestamp.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 336);
+            this.Controls.Add(this.txbTimestamp);
+            this.Controls.Add(this.lblTimestamp);
             this.Controls.Add(this.lblAccuracy);
             this.Controls.Add(this.txbAccuracy);
             this.Controls.Add(this.txbLat);
@@ -130,6 +152,8 @@
         private System.Windows.Forms.TextBox txbLat;
         private System.Windows.Forms.TextBox txbAccuracy;
         private System.Windows.Forms.Label lblAccuracy;
+        private System.Windows.Forms.Label lblTimestamp;
+        private System.Windows.Forms.TextBox txbTimestamp;
     }
 }
 
